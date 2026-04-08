@@ -18,6 +18,11 @@ Ensure you have [Go](https://go.dev/dl/) installed on your system.
 go install github.com/pirogom/ssh_launcher@latest
 ```
 
+After installation, the binary will be installed to your `$GOPATH/bin` directory. The executable name depends on your platform:
+
+- **Windows**: `ssh_launch.exe`
+- **macOS / Linux**: `ssh_launch`
+
 ### Building from source
 ```bash
 git clone https://github.com/pirogom/ssh_launcher
@@ -49,7 +54,21 @@ Create the directory and file at `~/.ssh_launcher/ssh_launcher.json` with the fo
 Run the compiled binary:
 
 ```bash
+# macOS / Linux
 sshl
+
+# Windows
+sshl.exe
+```
+
+If installed via `go install`, use the platform-specific executable name:
+
+```bash
+# macOS / Linux
+ssh_launch
+
+# Windows
+ssh_launch.exe
 ```
 
 - Use `↑` / `↓` or `k` / `j` to navigate the host list.
