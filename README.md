@@ -15,12 +15,12 @@ Ensure you have [Go](https://go.dev/dl/) installed on your system.
 
 ### Using go install (Recommended)
 ```bash
-go install github.com/your-username/sshl@latest
+go install github.com/pirogom/ssh_launcher@latest
 ```
 
 ### Building from source
 ```bash
-git clone <repository-url>
+git clone https://github.com/pirogom/ssh_launcher
 cd ssh_launcher
 go build -o sshl .
 ```
