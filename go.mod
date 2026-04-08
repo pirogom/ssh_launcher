@@ -1,4 +1,4 @@
-module sshl
+module github.com/pirogom/ssh_launcher
 
 go 1.24.2
 
